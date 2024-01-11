@@ -38,10 +38,19 @@ function App() {
         <label> Bid Request: </label>
         <div id="bid_request"/>
     </div>
+     <div>
+        <label> Bid Response: </label>
+        <div id="bid_response"/>
+        </div>
     <div>
         <label> Impression Request: </label>
         <div id="impression_request"/>
     </div>
+    <div>
+        <label> Impression Response: </label>
+        <div id="impression_response"/>
+    </div>
+
 
     <div>
         <label> Iframe: </label>
