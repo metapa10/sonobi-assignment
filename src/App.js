@@ -52,7 +52,7 @@ function App() {
     <div>
         <label> Iframe: </label>
         <div>
-            <iframe id="iframe" height="0" width="0"/>
+            <iframe title="impressionFrame" id="iframe" height="0" width="0"/>
         </div>
     </div>
 
