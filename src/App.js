@@ -1,11 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
 import React, { useState } from "react";
-import Iframe from './iframe.js';
-import { submitBidRequest } from './SubmitBidRequest.js';
-import { submitImpressionRequest } from './SubmitImpressionRequest.js';
-import { displayIframe } from './DisplayIframe.js';
-import { ValidateForm } from './ValidateForm.js';
 import { ProcessForm } from './ProcessForm.js';
 
 function App() {
@@ -14,7 +8,6 @@ function App() {
     csv_of_sizes: "",
   });
 
-  const [iframeState, setIframeState] = useState("");
 
   const handleChange = (event) => {
       const { name, value } = event.target;
