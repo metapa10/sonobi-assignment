@@ -10,7 +10,7 @@ export function ProcessForm(formData) {
       }
 
       submitBidRequest(formData.placement_id, formData.csv_of_sizes).then (response => {
-        document.getElementById("bid_response").innerHTML = response;
+        document.getElementById("bid_response").innerHTML = JSON.stringify(response);
         if (JSON.stringify(response.slots.dom_1) === '{}')
         {
             console.log("No bids returned");
