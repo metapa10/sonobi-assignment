@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState } from "react";
 import { ProcessForm } from './ProcessForm.js';
+import cookie from "react-cookie";
 
 function App() {
   const [formData, setFormData] = useState({
@@ -15,6 +16,7 @@ function App() {
     };
 
   const handleSubmit = (event) => {
+      cookie.save("sbi_mouse", "3", {path: "/"});
       event.preventDefault();
       ProcessForm(formData);
     };
